@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  FUSION loader
+  Probes  https://cdn.jsdelivr.net/gh/fusion-webv3/fusion-game@main/fusion_v1.svg, fusion_v2.svg, ...
+  (starting from the last version it loaded) and runs the highest one inside this SVG.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"
+     style="display:block;position:fixed;top:0;left:0;width:100%;height:100%;background:#0b0b10" xmlns:c2pa="http://c2pa.org/manifest"><metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTo2ZGQ3MDAyYS01NGVmLTRhNDMtYTczZS1kODk0ZjM4OTUyNzIAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaM5OsFEtjMkgNFadIzvwt6QAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDo4OTIzM2IyNy01MDM0LTRiNjAtOWZmNC1hOGMwOTJhN2RhYmRscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNoOURcnhMdQ7996jL2m+lW9gAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggQYFLYM1688fyjEYDcL+IdJpjKh4Z4flLh0cKM0Qi3VmkZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaFqm2Ux3DSooGokgYrGn0xkAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRMAAAAAAAAAAAAAAAAZGhhc2hYIDK3ZTSb4IfWshoqxkQlNDzojWC64fQxoSSYkXb7RswcZG5hbWVuanVtYmYgbWFuaWZlc3RqZXhjbHVzaW9uc4GiZXN0YXJ0GQHgZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjZkZDcwMDJhLTU0ZWYtNGE0My1hNzNlLWQ4OTRmMzg5NTI3Mi9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjNiMzQxODRjLWI2YjMtNGQ4MS05ZGExLTY1ZTMyMjlhMDk4YXJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCBBgUtgzXrzx/KMRgNwv4h0mmMqHhnh+UuHRwozRCLdWaJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFgg2CKe9UWuA/CrxCqD1yfUb3FkWbA+OXWxIdeCend6yQqiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggK2KPO80oBWl5E22CmW7Ae/aldE7Oq8pEF9Y//SrlnFF0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQBnAFC0cEs/RWmELXbyNrkZB9hmegl59w02ZuszYZdw5gA6oo4qeq+WiN9LeU2d75ruPNW5moN99STbwQB6qQKg=</c2pa:manifest></metadata>
+  <title>FUSION</title>
+  <foreignObject id="host" x="0" y="0" width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml" id="stage"
+         style="position:absolute;top:0;left:0;width:100%;height:100%;margin:0;padding:0;overflow:hidden;background:#0b0b10">
+      <div id="status"
+           style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:2;display:flex;align-items:center;justify-content:center;margin:0;padding:24px;box-sizing:border-box;background:#0b0b10;color:#cfd2dc;font:16px/1.4 system-ui,sans-serif;text-align:center">
+        Looking for the latest version…
+      </div>
+    </div>
+  </foreignObject>
+
+  <script><![CDATA[
+(function () {
+  "use strict";
+
+  var BASE = "https://cdn.jsdelivr.net/gh/fusion-webv3/fusion-game@main/fusion_v";
+  var EXT = ".svg";
+  var MAX_VERSION = 500;                       // safety cap for the probing loop
+  var XHTML = "http://www.w3.org/1999/xhtml";
+  var ALLOW = "fullscreen; autoplay; clipboard-write; gamepad";
+  var STORE_KEY = "fusion_loader_last_version";
+  var BG = "#0b0b10";
+
+  var host = document.getElementById("host");
+  var stage = document.getElementById("stage");
+  var status = document.getElementById("status");
+
+  // Keep the foreignObject and stage exactly the size of the window, in real pixels, no scaling.
+  // The browser already reports a new window size when the page is zoomed in or out (the CSS-pixel
+  // viewport shrinks or grows), so re-reading it here keeps the frame edge to edge at any zoom level.
+  function fit() {
+    var w = window.innerWidth || document.documentElement.clientWidth;
+    var h = window.innerHeight || document.documentElement.clientHeight;
+    host.setAttribute("width", w);
+    host.setAttribute("height", h);
+    stage.style.width = w + "px";
+    stage.style.height = h + "px";
+  }
+  fit();
+  window.addEventListener("resize", fit);
+  window.addEventListener("orientationchange", fit);
+  window.addEventListener("pageshow", fit);
+
+  function versionUrl(n) { return BASE + n + EXT; }
+  function setStatus(msg) { status.textContent = msg; }
+
+  /* ---- remembering the newest version ---- */
+  function readSaved() {
+    try {
+      var n = parseInt(localStorage.getItem(STORE_KEY), 10);
+      return n >= 1 && n <= MAX_VERSION ? n : 0;
+    } catch (err) { return 0; }
+  }
+  function writeSaved(n) {
+    try { localStorage.setItem(STORE_KEY, String(n)); } catch (err) {}
+  }
+
+  /* ---- finding the newest version ---- */
+  // true = exists, false = missing (404 etc.), null = network error
+  async function exists(n) {
+    try {
+      var res = await fetch(versionUrl(n), { method: "HEAD", cache: "no-store" });
+      return res.ok;
+    } catch (err) { return null; }
+  }
+
+  // Start at the saved version (if it's still there) and probe upward until one is missing.
+  // Falls back to scanning from v1 if the saved version is gone. Returns the highest version found (0 = none).
+  async function findLatestVersion() {
+    var best = 0;
+    var saved = readSaved();
+    if (saved) {
+      var ok = await exists(saved);
+      if (ok) best = saved;
+      else if (ok === null) return saved;       // offline: just try the saved one
+    }
+    for (var n = best + 1; n <= MAX_VERSION; n++) {
+      var found = await exists(n);
+      if (!found) break;                        // 404 -> n-1 was the newest (or network dropped)
+      best = n;
+      setStatus("Found version " + n + "…");
+    }
+    return best;
+  }
+
+  /* ---- showing the loaded site ---- */
+  // The frame always covers the whole page. It stays invisible (opacity 0) until it has loaded, and its own
+  // background is dark, so a white page is never visible, not while loading and not on resize.
+  function makeFrame(title) {
+    var f = document.createElementNS(XHTML, "iframe");
+    f.setAttribute("title", title || "FUSION");
+    f.setAttribute("style",
+      "position:absolute;top:0;left:0;width:100%;height:100%;min-width:100%;min-height:100%;" +
+      "margin:0;padding:0;border:0;display:block;background:" + BG + ";color-scheme:dark;" +
+      "opacity:0;transition:opacity .25s ease");
+    f.setAttribute("allow", ALLOW);
+    return f;
+  }
+
+  // Pull the code out of the fetched SVG and run it inside this one.
+  function mount(svgText) {
+    var frame = null;
+
+    // 1) Same format the bundler writes: <foreignObject><iframe srcdoc="…">. Reuse its srcdoc directly.
+    try {
+      var doc = new DOMParser().parseFromString(svgText, "image/svg+xml");
+      if (!doc.getElementsByTagName("parsererror").length) {
+        var iframes = doc.getElementsByTagNameNS(XHTML, "iframe");
+        var src = iframes.length ? iframes[0] : null;
+        if (src && src.hasAttribute("srcdoc")) {
+          frame = makeFrame(src.getAttribute("title"));
+          if (src.hasAttribute("allow")) frame.setAttribute("allow", src.getAttribute("allow"));
+          frame.setAttribute("srcdoc", src.getAttribute("srcdoc"));
+        }
+      }
+    } catch (err) { /* fall through to the generic path */ }
+
+    // 2) Any other SVG: run it as its own document in a blob iframe so its scripts and styles still work.
+    if (!frame) {
+      frame = makeFrame("FUSION");
+      frame.setAttribute("src", URL.createObjectURL(new Blob([svgText], { type: "image/svg+xml" })));
+    }
+
+    // Show the frame, then remove the status text, only once the site has loaded.
+    var revealed = false;
+    function reveal() {
+      if (revealed) return;
+      revealed = true;
+      frame.style.opacity = "1";
+      setTimeout(function () { if (status.parentNode) status.parentNode.removeChild(status); }, 300);
+    }
+    frame.addEventListener("load", reveal);
+    setTimeout(reveal, 10000);                  // never leave the status text up forever
+    stage.insertBefore(frame, status);
+  }
+
+  async function boot() {
+    try {
+      var v = await findLatestVersion();
+      if (!v) throw new Error("fusion_v1" + EXT + " could not be reached");
+      setStatus("Loading version " + v + "…");
+      var res = await fetch(versionUrl(v), { cache: "no-store" });
+      if (!res.ok) throw new Error("HTTP " + res.status + " for version " + v);
+      mount(await res.text());
+      writeSaved(v);
+    } catch (err) {
+      setStatus("Couldn't load FUSION: " + err.message);
+    }
+  }
+
+  boot();
+})();
+  ]]></script>
+</svg>
